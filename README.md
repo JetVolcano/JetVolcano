@@ -1,5 +1,4 @@
 - 👋 Hi, I’m @JetVolcano
 - 👀 I’m interested in Minecraft
-- 🌱 I’m currently learning Python, Javascript, Typescript
 - 🌱 I’m currently learning Python, Javascript, Typescript, Java
 - 😄 Pronouns: He, Him, His
