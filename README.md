@@ -5,7 +5,7 @@
                 <td rowspan="2">
                      <p>👋 Hi, I’m @JetVolcano</p>
                      <p>👀 I’m interested in Minecraft</p>
-                     <p>🌱 I’m currently learning Python, Javascript, Typescript, Java</p>
+                     <p>🌱 I’m currently learning Python, Javascript, Java</p>
                      <p>😄 Pronouns: He, Him, His</p>
                 </td>
                 <td>
