@@ -2,7 +2,7 @@
 
 👀 I’m currently interested in Minecraft
 
-🌱 I’m currently learning Python, Typescript
+🌱 I’m currently learning Web Development
 
 😄 Pronouns: He, Him, His
 
