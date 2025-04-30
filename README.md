@@ -1,10 +1,10 @@
-# 👋 Hi, I’m JetVolcano
+# :wave: Hi, I’m ![JetVolcano's Face](https://avatars.githubusercontent.com/u/184006209?s=400&u=86a842afd9732b3dc51ceaf46bfba5320a9ce205&v=4) JetVolcano
 
-👀 I’m currently interested in Minecraft
+:eyes: I’m currently interested in Minecraft
 
-🌱 I’m currently learning Web Development
+:book: I’m currently learning Web Development
 
-😄 Pronouns: He, Him, His
+:smile: Pronouns: He, Him, His
 
-![JetVolcano Stats](https://github-readme-stats.vercel.app/api?username=JetVolcano&show_icons=true&theme=dracula)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=JetVolcano)
+![JetVolcano's Stats](https://github-readme-stats.vercel.app/api?username=JetVolcano&show_icons=true&theme=dracula)
+![My Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=JetVolcano)
