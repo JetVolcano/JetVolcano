@@ -2,7 +2,7 @@
 
 :eyes: I’m currently interested in Minecraft
 
-:book: I’m currently learning Web Development
+:book: I’m currently learning [Web Development](https://jetvolcano.github.io)
 
 :smile: Pronouns: He, Him, His
 
