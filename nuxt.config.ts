@@ -1,23 +1,19 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: {
     enabled: true,
-
     timeline: {
       enabled: true,
     },
   },
-  modules: ["@nuxt/ui", "@nuxt/icon", "@compodium/nuxt", "@nuxt/fonts"],
+  modules: ["@nuxt/ui", "@nuxt/icon", "@nuxt/fonts", "nuxt-viewport", "@pinia/nuxt"],
   icon: {
-    collections: [
-      "lucide",
-      "simple-icons",
-      "vscode-icons",
-      "material-icon-theme",
-    ],
+    collections: ["lucide", "simple-icons", "vscode-icons", "material-icon-theme"],
+    clientBundle: {
+      scan: true,
+    },
   },
   css: ["~/assets/css/main.css"],
   fonts: {
@@ -38,6 +34,9 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: "JetVolcano's Website",
+      htmlAttrs: {
+        lang: "en",
+      },
     },
   },
 });

@@ -8,6 +8,18 @@ const items = ref<NavigationMenuItem[]>([
     to: "/",
   },
   {
+    label: "Games",
+    icon: "lucide:gamepad",
+    children: [
+      {
+        label: "Counter",
+        description: "A counting game",
+        icon: "lucide:plus",
+        to: "/games/counter",
+      },
+    ],
+  },
+  {
     label: "Python",
     icon: "material-icon-theme:python",
     children: [
@@ -19,8 +31,7 @@ const items = ref<NavigationMenuItem[]>([
       },
       {
         label: "Accurate Benchmark",
-        description:
-          "A Python package for accurate benchmarks and speed comparisons",
+        description: "A Python package for accurate benchmarks and speed comparisons",
         icon: "lucide:clock",
         to: "/python/accurate-benchmark",
       },
@@ -32,27 +43,47 @@ const items = ref<NavigationMenuItem[]>([
     children: [
       {
         label: "Create: Explore The World!",
-        description:
-          "Feature packed nomadic pack with an emphasis on the Create Mod!",
+        description: "Feature packed nomadic pack with an emphasis on the Create Mod!",
         icon: "lucide:rocket",
         to: "/minecraft/modpacks/cetw",
       },
     ],
   },
 ]);
+
+const viewport = useViewport();
+const colorMode = useColorMode();
+
+function getNextMode(): string {
+  switch (colorMode.value) {
+    case "dark":
+      return "Switch to Light mode.";
+    case "light":
+      return "Switch to Dark mode.";
+  }
+  return "";
+}
+
+function titleText(): string {
+  if (viewport.isGreaterOrEquals("mobileWide")) {
+    return "Volcano";
+  }
+  return "";
+}
 </script>
 
 <template>
   <UHeader>
     <template #title>
-      <UAvatar src="/favicon.ico" />
-      JetVolcano's Website
+      <UAvatar src="/favicon.ico" alt="JetVolcano" />
+      <p>Jet{{ titleText() }}'s Website</p>
     </template>
 
     <UNavigationMenu :items="items" class="w-full justify-center" />
-
     <template #right>
-      <UColorModeButton />
+      <UTooltip :text="getNextMode()">
+        <UColorModeButton class="active:scale-[0.97]" />
+      </UTooltip>
 
       <UTooltip text="Open on Github">
         <UButton
@@ -64,6 +95,10 @@ const items = ref<NavigationMenuItem[]>([
           aria-label="GitHub"
         />
       </UTooltip>
+    </template>
+
+    <template #body>
+      <UNavigationMenu :items="items" orientation="vertical" class="w-full justify-center" />
     </template>
   </UHeader>
 </template>

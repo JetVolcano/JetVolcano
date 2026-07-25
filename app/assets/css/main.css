@@ -2,22 +2,25 @@
 @import "@nuxt/ui";
 
 @theme {
+  --default-font-family: "Maple Mono";
   --font-display: "Maple Mono";
-  --cold-black: oklch(18.309% 0.00406 285.925);
-  --cold-black-accented: oklch(25% 0.01 240);
+  --black-primary: oklch(18.309% 0.00406 285.925);
+  --black-accented: oklch(25% 0.01 240);
 }
 
 body {
   --ui-bg: var(--color-slate-300);
   --ui-border: var(--color-slate-400);
+  --ui-bg-accented: var(--color-blue-100);
   --ui-bg-elevated: var(--color-blue-100);
   --ui-primary: var(--color-sky-500);
-  --ui-text: var(--cold-black);
+  --ui-text: var(--black-primary);
 
   @variant dark {
-    --ui-border: var(--cold-black-accented);
-    --ui-bg: var(--cold-black);
-    --ui-bg-elevated: var(--cold-black-accented);
+    --ui-border: var(--black-accented);
+    --ui-bg: var(--black-primary);
+    --ui-bg-accented: var(--black-accented);
+    --ui-bg-elevated: var(--black-accented);
     --ui-text: var(--color-slate-300);
   }
 }

@@ -1,8 +1,30 @@
+<script setup lang="ts">
+import type { ButtonProps } from "@nuxt/ui";
+
+useHead({ title: "Create: Explore the World!" });
+
+const headline: string = "Aeronautics now included!";
+const title: string = "Create: Explore the World!";
+const description: string =
+  "A semi-nomadic modpack that encourages you to explore the depths of the world.";
+const links: Ref<ButtonProps[]> = ref([
+  {
+    label: "Install",
+    to: "https://modrinth.com/modpack/create-explore-the-world/versions",
+    icon: "lucide:download",
+    variant: "subtle",
+  },
+]);
+</script>
+
 <template>
   <UContainer>
     <UPageHero
-      title="Create: Explore The World!"
-      description="A semi-nomadic modpack that encourages you to explore the depths of the world. During your journey you may encounter unfamiliar entities that may be agressive, to combat this you should obtain gear beyond vanilla progression."
+      class="select-none"
+      :headline="headline"
+      :title="title"
+      :description="description"
+      :links="links"
     />
   </UContainer>
 </template>

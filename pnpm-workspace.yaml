@@ -1,4 +1,27 @@
 allowBuilds:
   "@parcel/watcher": true
-  esbuild: true
-  vue-demi: true
+  "esbuild": true
+  "vue-demi": true
+
+catalogs:
+  dev:
+    "oxfmt": latest
+    "typescript": "7.0.2"
+    "@iconify-json/lucide": 1.2.118
+    "@iconify-json/material-icon-theme": 1.2.69
+    "@iconify-json/simple-icons": 1.2.91
+    "@iconify-json/vscode-icons": 1.2.67
+  vue:
+    "vue": "3.5.40"
+    "vue-router": "5.2.0"
+    "nuxt": "4.4.8"
+    "nuxt-viewport": "2.4.0"
+    "pinia": 4.0.2
+    "@pinia/nuxt": "1.0.1"
+
+  ui:
+    "@nuxt/fonts": 0.14.0
+    "@nuxt/icon": 2.3.1
+    "@nuxt/ui": 4.10.0
+    "@tailwindcss/vite": 4.3.3
+    "tailwindcss": 4.3.3

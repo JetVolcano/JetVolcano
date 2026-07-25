@@ -5,15 +5,15 @@
 ## 1. Definitions
 
 - **Owner(s):**\
-&emsp;The organization or person that owns of the product.
+  &emsp;The organization or person that owns of the product.
 - **Software:**\
-&emsp;The product.
+  &emsp;The product.
 - **Dependent:**\
-&emsp;Any product that depends on any version of the Software.
+  &emsp;Any product that depends on any version of the Software.
 - **Fork**\
-&emsp;A copy of the Software that is still linked to the software and used for making changes in the codebase.
+  &emsp;A copy of the Software that is still linked to the software and used for making changes in the codebase.
 - **Forking**\
-&emsp;The act of creating a Fork and/or modifying it.
+  &emsp;The act of creating a Fork and/or modifying it.
 
 ## 2. Terms
 

@@ -1,33 +1,36 @@
 {
   "name": "jetvolcano.netlify.app",
-  "type": "module",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "nuxt dev",
-    "format": "prettier --write .",
+    "format": "oxfmt",
+    "reinstall": "pnpm i",
     "build": "nuxt build",
     "generate": "nuxt generate",
-    "preview": "nuxt preview",
+    "preview": "nuxt build; nuxt preview",
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@nuxt/fonts": "0.14.0",
-    "@nuxt/icon": "2.2.3",
-    "@nuxt/ui": "4.8.2",
-    "@tailwindcss/vite": "^4.3.0",
-    "nuxt": "^4.4.6",
-    "tailwindcss": "^4.3.0",
-    "typescript": "^6.0.3",
-    "vue": "^3.5.29",
-    "vue-router": "^5.0.3"
+    "@nuxt/fonts": "catalog:ui",
+    "@nuxt/icon": "catalog:ui",
+    "@nuxt/ui": "catalog:ui",
+    "@pinia/nuxt": "catalog:vue",
+    "@tailwindcss/vite": "catalog:ui",
+    "nuxt": "catalog:vue",
+    "nuxt-viewport": "catalog:vue",
+    "pinia": "catalog:vue",
+    "tailwindcss": "catalog:ui",
+    "typescript": "catalog:dev",
+    "vue": "catalog:vue",
+    "vue-router": "catalog:vue"
   },
   "devDependencies": {
-    "@compodium/nuxt": "0.1.0-beta.12",
-    "@iconify-json/lucide": "^1.2.93",
-    "@iconify-json/material-icon-theme": "^1.2.51",
-    "@iconify-json/simple-icons": "^1.2.71",
-    "@iconify-json/vscode-icons": "^1.2.54",
-    "prettier": "^3.8.1"
+    "@iconify-json/lucide": "catalog:dev",
+    "@iconify-json/material-icon-theme": "catalog:dev",
+    "@iconify-json/simple-icons": "catalog:dev",
+    "@iconify-json/vscode-icons": "catalog:dev",
+    "oxfmt": "catalog:dev"
   },
-  "packageManager": "pnpm@11.5.2+sha512.71c631e382066efc25625d5cf029075de07b61b37f6e27350fbd84b1bda5864c8c1967adc280776b45c30a715c0359a3be08fef42d5bb09e2b99029979692916"
+  "packageManager": "pnpm@11.17.0+sha512.cca3cea332ad254bb84145f966d19f4879615210346fc92c79a047f23a0d7b3cca3c3792f0076ba1f1831d277efbcf0a9119b31a9a60eca7fb3d6231f331ef72"
 }
