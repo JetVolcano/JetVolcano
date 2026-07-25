@@ -32,7 +32,7 @@ jobs:
                   user: JetVolcano
                   template: classic
                   base: header, activity, community, repositories
-                  config_display: columns
+                  config_display: regular
                   config_octicon: yes
                   config_timezone: America/Los_Angeles
                   config_padding: 0, 8 + 11%
