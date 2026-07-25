@@ -36,8 +36,8 @@ jobs:
                   config_octicon: yes
                   config_timezone: America/Los_Angeles
                   config_padding: 0, 8 + 11%
-                  plugin_calendar: yes
-                  plugin_calendar_limit: 3
+                  plugin_isocalendar: yes
+                  plugin_isocalendar_duration: 2
                   plugin_followup: yes
                   plugin_followup_archived: yes
                   plugin_followup_indepth: yes
