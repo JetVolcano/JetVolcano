@@ -21,7 +21,6 @@ jobs:
         id: "get-bot"
         uses: raven-actions/bot-details@v1
       - name: "Delete Original"
-        shell: "bash"
         run: |
           rm -f public/metrics.svg
           if [ -f "public/metrics.svg" ]; then
@@ -29,7 +28,7 @@ jobs:
           else
             echo -e "\033[1;92mSuccessfully deleted \033[1;97mmetrics.svg\033[0m"
           fi
-          if [ -n "${git status --porcelain}" ]; then
+          if [ -n "$(git status --porcelain)" ]; then
             git config --global user.name "${{ steps.get-bot.outputs.name }}"
             git config --global user.email "${{ steps.get-bot.outputs.email }}"
             git add github-metrics.svg
