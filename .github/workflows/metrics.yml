@@ -21,6 +21,7 @@ jobs:
         id: "get-bot"
         uses: raven-actions/bot-details@v1
       - name: "Delete Original"
+        shell: "bash"
         run: |
           rm -f public/metrics.svg
           if [ -f "public/metrics.svg" ]; then
