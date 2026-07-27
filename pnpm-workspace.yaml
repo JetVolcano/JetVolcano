@@ -7,7 +7,7 @@ catalogs:
   dev:
     "oxfmt": latest
     "typescript": "7.0.2"
-    "@iconify-json/lucide": 1.2.118
+    "@iconify-json/lucide": 1.2.120
     "@iconify-json/material-icon-theme": 1.2.69
     "@iconify-json/simple-icons": 1.2.91
     "@iconify-json/vscode-icons": 1.2.67

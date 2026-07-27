@@ -7,8 +7,8 @@ settings:
 catalogs:
   dev:
     '@iconify-json/lucide':
-      specifier: 1.2.118
-      version: 1.2.118
+      specifier: 1.2.120
+      version: 1.2.120
     '@iconify-json/material-icon-theme':
       specifier: 1.2.69
       version: 1.2.69
@@ -103,7 +103,7 @@ importers:
     devDependencies:
       '@iconify-json/lucide':
         specifier: catalog:dev
-        version: 1.2.118
+        version: 1.2.120
       '@iconify-json/material-icon-theme':
         specifier: catalog:dev
         version: 1.2.69
@@ -642,8 +642,8 @@ packages:
   '@floating-ui/vue@1.1.11':
     resolution: {integrity: sha512-HzHKCNVxnGS35r9fCHBc3+uCnjw9IWIlCPL683cGgM9Kgj2BiAl8x1mS7vtvP6F9S/e/q4O6MApwSHj8hNLGfw==}
 
-  '@iconify-json/lucide@1.2.118':
-    resolution: {integrity: sha512-JBnK4YOq6K/lA0JP//27QxFxJ4120TjvfXAzGZZIGjCcXcRRRFxl1rcV7+IWdcVCe90KXdqVaAwLaLf6G3HELw==}
+  '@iconify-json/lucide@1.2.120':
+    resolution: {integrity: sha512-4ECF24fxag1n5tZlPGrbWuCGqhkwD0rvAzfCXretqQb4KEC8Y6ja3khF8qmvpR1Mk0NQDhBTRK3Fr/YoV8QyJw==}
 
   '@iconify-json/material-icon-theme@1.2.69':
     resolution: {integrity: sha512-BqVadW0C19qyzp7Gtl2z0wExBFhfGKDPrgq4ajnGUe9atBcqSwz/yULCbZWzjPlOPrFFu4P3hhfs8Vl503nhEg==}
@@ -5192,7 +5192,7 @@ snapshots:
       - '@vue/composition-api'
       - vue
 
-  '@iconify-json/lucide@1.2.118':
+  '@iconify-json/lucide@1.2.120':
     dependencies:
       '@iconify/types': 2.0.0
 
