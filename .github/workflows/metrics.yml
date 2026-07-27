@@ -31,8 +31,8 @@ jobs:
           if [ -n "$(git status --porcelain)" ]; then
             git config --global user.name "${{ steps.get-bot.outputs.name }}"
             git config --global user.email "${{ steps.get-bot.outputs.email }}"
-            git add github-metrics.svg
-            git commit -m "Deleted github-metrics.svg"
+            git add public/metrics.svg
+            git commit -m "Deleted metrics.svg"
             git push
           fi
       - name: "Fetch Metrics"
