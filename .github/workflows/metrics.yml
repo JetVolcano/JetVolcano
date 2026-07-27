@@ -3,7 +3,7 @@ name: Metrics
 on:
     # Schedule updates (each hour)
     schedule:
-        - cron: 0 0 * * *
+        - cron: 0 0 * * 0,5
         # Lines below let you run workflow manually and on each commit
     workflow_dispatch:
     push: { branches: ["master", "main"] }
@@ -16,7 +16,22 @@ jobs:
         environment:
             name: "production"
         steps:
-            - uses: lowlighter/metrics@v3.34
+            - name: "Checkout Repository"
+              uses: actions/checkout@v7
+            - name: "Get Bot"
+              id: "get-bot"
+              uses: raven-actions/bot-details@v1
+            - name: "Delete Original"
+              run: |
+                  rm -f github-metrics.svg
+                  ls
+                  git config --global user.name "${{ steps.get-bot.outputs.name }}"
+                  git config --global user.email "${{ steps.get-bot.outputs.email }}"
+                  git add github-metrics.svg
+                  git commit -m "Deleted github-metrics.svg"
+                  git push
+            - name: "Fetch Metrics"
+              uses: lowlighter/metrics@v3.34
               with:
                   # Your GitHub token
                   # The following scopes are required:
