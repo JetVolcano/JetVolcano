@@ -20,19 +20,20 @@ jobs:
       - name: "Get Bot"
         id: "get-bot"
         uses: raven-actions/bot-details@v1
-      - name: "Delete Original"
+      - name: "Move Original"
         run: |
-          rm -f public/metrics.svg
+          mv -f public/metrics.svg public/fallback-metrics.svg
           if [ -f "public/metrics.svg" ]; then
-            echo -e "\033[1;91mFailed to delete \033[1;97mmetrics.svg\033[0m"
+            echo -e "\033[1;91mFailed to move \033[1;97mmetrics.svg\033[0m"
           else
-            echo -e "\033[1;92mSuccessfully deleted \033[1;97mmetrics.svg\033[0m"
+            echo -e "\033[1;92mSuccessfully moved \033[1;97mmetrics.svg\033[0m"
           fi
           if [ -n "$(git status --porcelain)" ]; then
             git config --global user.name "${{ steps.get-bot.outputs.name }}"
             git config --global user.email "${{ steps.get-bot.outputs.email }}"
             git add public/metrics.svg
-            git commit -m "Deleted metrics.svg"
+            git add public/fallback-metrics.svg
+            git commit -m "Moved metrics.svg to the fallback location."
             git push
           fi
       - name: "Fetch Metrics"
