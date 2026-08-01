@@ -7,10 +7,10 @@ catalogs:
   dev:
     "oxfmt": latest
     "typescript": "7.0.2"
-    "@iconify-json/lucide": 1.2.118
-    "@iconify-json/material-icon-theme": 1.2.69
-    "@iconify-json/simple-icons": 1.2.91
-    "@iconify-json/vscode-icons": 1.2.67
+    "@iconify-json/lucide": latest
+    "@iconify-json/material-icon-theme": latest
+    "@iconify-json/simple-icons": latest
+    "@iconify-json/vscode-icons": latest
   vue:
     "vue": "3.5.40"
     "vue-router": "5.2.0"
@@ -21,7 +21,7 @@ catalogs:
 
   ui:
     "@nuxt/fonts": 0.14.0
-    "@nuxt/icon": 2.3.1
+    "@nuxt/icon": 2.4.1
     "@nuxt/ui": 4.10.0
     "@tailwindcss/vite": 4.3.3
     "tailwindcss": 4.3.3
