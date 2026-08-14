@@ -12,16 +12,20 @@ catalogs:
     "@iconify-json/simple-icons": latest
     "@iconify-json/vscode-icons": latest
   vue:
-    "vue": "3.5.40"
+    "vue": "3.5.41"
     "vue-router": "5.2.0"
     "nuxt": "4.4.8"
     "nuxt-viewport": "2.4.0"
-    "pinia": 4.0.2
-    "@pinia/nuxt": "1.0.1"
+    "pinia": 4.0.3
+    "@pinia/nuxt": "1.0.2"
 
   ui:
     "@nuxt/fonts": 0.14.0
-    "@nuxt/icon": 2.4.1
+    "@nuxt/icon": 2.5.0
     "@nuxt/ui": 4.10.0
     "@tailwindcss/vite": 4.3.3
     "tailwindcss": 4.3.3
+
+minimumReleaseAgeExclude:
+  - '@pinia/nuxt@1.0.2'
+  - pinia@4.0.3
