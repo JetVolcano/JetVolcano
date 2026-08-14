@@ -17,7 +17,7 @@ catalogs:
       version: 1.2.93
     '@iconify-json/vscode-icons':
       specifier: latest
-      version: 1.2.71
+      version: 1.2.72
     oxfmt:
       specifier: latest
       version: 0.63.0
@@ -48,8 +48,8 @@ catalogs:
       specifier: 4.4.8
       version: 4.4.8
     nuxt-viewport:
-      specifier: 2.4.0
-      version: 2.4.0
+      specifier: 2.6.0
+      version: 2.6.0
     pinia:
       specifier: 4.0.3
       version: 4.0.3
@@ -84,7 +84,7 @@ importers:
         version: 4.4.8(@babel/plugin-syntax-jsx@7.29.7(@babel/core@7.29.7(supports-color@10.2.2)))(@babel/plugin-syntax-typescript@7.29.7(@babel/core@7.29.7(supports-color@10.2.2)))(@oxc-project/types@0.143.0)(@vue/compiler-sfc@3.5.41)(cac@6.7.14)(db0@0.3.4)(esbuild@0.28.1)(ioredis@5.11.1(supports-color@10.2.2))(lightningcss@1.33.0)(magicast@0.5.4)(pinia@4.0.3(@vue/devtools-api@8.2.1)(typescript@7.0.2)(vue@3.5.41(typescript@7.0.2)))(rolldown@1.2.3)(rollup-plugin-visualizer@7.0.1(rolldown@1.2.3)(rollup@4.62.3))(rollup@4.62.3)(srvx@0.11.22)(supports-color@10.2.2)(terser@5.49.0)(typescript@7.0.2)(vite@8.2.1(esbuild@0.28.1)(jiti@2.7.0)(terser@5.49.0)(yaml@2.9.0))(yaml@2.9.0)
       nuxt-viewport:
         specifier: catalog:vue
-        version: 2.4.0(magic-string@1.1.0)(magicast@0.5.4)(oxc-parser@0.133.0)(rolldown@1.2.3)(unplugin@3.3.0(esbuild@0.28.1)(rolldown@1.2.3)(rollup@4.62.3)(vite@8.2.1(esbuild@0.28.1)(jiti@2.7.0)(terser@5.49.0)(yaml@2.9.0)))(vue@3.5.41(typescript@7.0.2))
+        version: 2.6.0(magic-string@1.1.0)(magicast@0.5.4)(oxc-parser@0.133.0)(rolldown@1.2.3)(unplugin@3.3.0(esbuild@0.28.1)(rolldown@1.2.3)(rollup@4.62.3)(vite@8.2.1(esbuild@0.28.1)(jiti@2.7.0)(terser@5.49.0)(yaml@2.9.0)))(vue@3.5.41(typescript@7.0.2))
       pinia:
         specifier: catalog:vue
         version: 4.0.3(@vue/devtools-api@8.2.1)(typescript@7.0.2)(vue@3.5.41(typescript@7.0.2))
@@ -112,7 +112,7 @@ importers:
         version: 1.2.93
       '@iconify-json/vscode-icons':
         specifier: catalog:dev
-        version: 1.2.71
+        version: 1.2.72
       oxfmt:
         specifier: catalog:dev
         version: 0.63.0
@@ -660,8 +660,8 @@ packages:
   '@iconify-json/simple-icons@1.2.93':
     resolution: {integrity: sha512-/XhANjfGYOuqvSR3TmUnkQkINvQ4GVjVuukvymRbxtVFBvIq/yiXJqCDycKcQPT401OYT9H2vIY6ihAlz1QIAw==}
 
-  '@iconify-json/vscode-icons@1.2.71':
-    resolution: {integrity: sha512-sZ0NY91UNXgzBK8XX1FVmhiGyp06YHlQ3flnksT+eVqoVJ1TGLt4VCH42VClcytsihIkcfWDiepFU7bCN7cNIw==}
+  '@iconify-json/vscode-icons@1.2.72':
+    resolution: {integrity: sha512-IWsfSq21QZtZ8WWNtNm09E9I1PKXNSx9PQnOAD6vWSSNrL4bMDpK5nEbmyNV4XBYuQ/jAc1Foj233C/QtRAQOg==}
 
   '@iconify/collections@1.0.723':
     resolution: {integrity: sha512-h9/C2f+OC/iYFwCuqPh8nFAdAbRyV0TwNUGEA2L3VI4hC89YUa6LOBMr/6LUAgcd3wMPXPnnt0Y6Ecgxqb/rIQ==}
@@ -3696,8 +3696,8 @@ packages:
   nth-check@2.1.1:
     resolution: {integrity: sha512-lqjrjmaOoAnWfMmBPL+XNnynZh2+swxiX3WUE0s4yEHI6m+AwrK2UZOimIRl3X/4QctVqS8AiZjFqyOGrMXb/w==}
 
-  nuxt-viewport@2.4.0:
-    resolution: {integrity: sha512-2a1LWUwYxCK+F8IArhDi7rZ5F48zt8LenoI10F4ZD312z8QLVx6HDOP2woElUVKMn0O/KbXVIy1pHSTb0E9ncg==}
+  nuxt-viewport@2.6.0:
+    resolution: {integrity: sha512-Ee6PlKrWasxbpBfH/lvwBFdJyi/KdqqHSKgXcT8U90k4gf3DLRXcSfwTm++TAdnG3sCzmcvj1kiACLg8MunaNw==}
 
   nuxt@4.4.8:
     resolution: {integrity: sha512-r/DGE4cNkEDclOw9tbJ18zqu+ix3me+7QCfumPdl5lBXGWgCajskzuq/HzDkHKfIZsn7ACVEjMLRNA2teh++bQ==}
@@ -5422,7 +5422,7 @@ snapshots:
     dependencies:
       '@iconify/types': 2.0.0
 
-  '@iconify-json/vscode-icons@1.2.71':
+  '@iconify-json/vscode-icons@1.2.72':
     dependencies:
       '@iconify/types': 2.0.0
 
@@ -8702,9 +8702,9 @@ snapshots:
     dependencies:
       boolbase: 1.0.0
 
-  nuxt-viewport@2.4.0(magic-string@1.1.0)(magicast@0.5.4)(oxc-parser@0.133.0)(rolldown@1.2.3)(unplugin@3.3.0(esbuild@0.28.1)(rolldown@1.2.3)(rollup@4.62.3)(vite@8.2.1(esbuild@0.28.1)(jiti@2.7.0)(terser@5.49.0)(yaml@2.9.0)))(vue@3.5.41(typescript@7.0.2)):
+  nuxt-viewport@2.6.0(magic-string@1.1.0)(magicast@0.5.4)(oxc-parser@0.133.0)(rolldown@1.2.3)(unplugin@3.3.0(esbuild@0.28.1)(rolldown@1.2.3)(rollup@4.62.3)(vite@8.2.1(esbuild@0.28.1)(jiti@2.7.0)(terser@5.49.0)(yaml@2.9.0)))(vue@3.5.41(typescript@7.0.2)):
     dependencies:
-      '@nuxt/kit': 4.5.1(magic-string@1.1.0)(magicast@0.5.4)(oxc-parser@0.133.0)(rolldown@1.2.3)(unplugin@3.3.0(esbuild@0.28.1)(rolldown@1.2.3)(rollup@4.62.3)(vite@8.2.1(esbuild@0.28.1)(jiti@2.7.0)(terser@5.49.0)(yaml@2.9.0)))
+      '@nuxt/kit': 4.5.2(magic-string@1.1.0)(magicast@0.5.4)(oxc-parser@0.133.0)(rolldown@1.2.3)(unplugin@3.3.0(esbuild@0.28.1)(rolldown@1.2.3)(rollup@4.62.3)(vite@8.2.1(esbuild@0.28.1)(jiti@2.7.0)(terser@5.49.0)(yaml@2.9.0)))
       bowser: 2.14.1
       cookiejs: 2.1.3
       vue-demi: 0.14.10(vue@3.5.41(typescript@7.0.2))
