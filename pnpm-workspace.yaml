@@ -14,7 +14,7 @@ catalogs:
   vue:
     "vue": "3.5.41"
     "vue-router": "5.2.0"
-    "nuxt": "4.4.8"
+    "nuxt": "4.5.1"
     "nuxt-viewport": "2.4.0"
     "pinia": 4.0.3
     "@pinia/nuxt": "1.0.2"
