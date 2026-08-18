@@ -52,17 +52,6 @@ const items = ref<NavigationMenuItem[]>([
 ]);
 
 const viewport = useViewport();
-const colorMode = useColorMode();
-
-function getNextMode(): string {
-  switch (colorMode.value) {
-    case "dark":
-      return "Switch to Light mode.";
-    case "light":
-      return "Switch to Dark mode.";
-  }
-  return "";
-}
 
 function titleText(): string {
   if (viewport.isGreaterOrEquals("mobileWide")) {
@@ -75,26 +64,26 @@ function titleText(): string {
 <template>
   <UHeader>
     <template #title>
-      <UAvatar src="/favicon.ico" alt="JetVolcano" />
+      <UAvatar src="/favicon.ico" alt="JetVolcano" class="rounded-none -translate-x-2" />
       <p>Jet{{ titleText() }}'s Website</p>
     </template>
 
     <UNavigationMenu :items="items" class="w-full justify-center" />
     <template #right>
-      <UTooltip :text="getNextMode()">
-        <UColorModeButton class="active:scale-[0.97]" />
-      </UTooltip>
+      <ColorModeButton />
 
-      <UTooltip text="Open on Github">
-        <UButton
-          color="neutral"
-          variant="ghost"
-          to="https://github.com/JetVolcano/website"
-          target="_blank"
-          icon="simple-icons:github"
-          aria-label="GitHub"
-        />
-      </UTooltip>
+      <IconLink
+        tooltip="Check out my Github!"
+        link="https://github.com/JetVolcano"
+        icon="simple-icons:github"
+      />
+
+      <IconLink
+        tooltip="Go to my Modrinth profile!"
+        link="https://modrinth.com/user/JetVolcano"
+        icon="simple-icons:modrinth"
+        buttonClass="hover:text-[#00af5c]"
+      />
     </template>
 
     <template #body>
