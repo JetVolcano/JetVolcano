@@ -14,6 +14,8 @@ function getNextMode(): string {
 
 <template>
   <UTooltip :text="getNextMode()">
-    <UColorModeButton class="transition ease-in-out delay-50 duration-150 hover:drop-shadow-lg  hover:drop-shadow-sky-500" />
+    <UColorModeButton
+      class="transition ease-in-out delay-50 duration-150 hover:drop-shadow-lg hover:drop-shadow-sky-500"
+    />
   </UTooltip>
 </template>

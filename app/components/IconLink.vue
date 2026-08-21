@@ -1,16 +1,16 @@
 <script setup lang="ts">
 defineProps<{
-  tooltip: string;
   icon: string;
   link: string;
-  buttonClass?: string;
+  tooltip?: string;
+  class?: string;
 }>();
 </script>
 
 <template>
   <UTooltip :text="tooltip">
     <UButton
-      :class="buttonClass"
+      :class="class"
       color="neutral"
       variant="ghost"
       :to="link"

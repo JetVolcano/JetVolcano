@@ -17,6 +17,7 @@
     "@nuxt/ui": "catalog:ui",
     "@pinia/nuxt": "catalog:vue",
     "@tailwindcss/vite": "catalog:ui",
+    "cookiejs": "catalog:misc",
     "nuxt": "catalog:vue",
     "nuxt-viewport": "catalog:vue",
     "pinia": "catalog:vue",

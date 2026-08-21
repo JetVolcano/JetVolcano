@@ -64,7 +64,7 @@ function titleText(): string {
 <template>
   <UHeader>
     <template #title>
-      <UAvatar src="/favicon.ico" alt="JetVolcano" class="rounded-none -translate-x-2" />
+      <UAvatar src="/favicon.ico" alt="JetVolcano" class="rounded-md -translate-x-2" />
       <p>Jet{{ titleText() }}'s Website</p>
     </template>
 
@@ -82,7 +82,7 @@ function titleText(): string {
         tooltip="Go to my Modrinth profile!"
         link="https://modrinth.com/user/JetVolcano"
         icon="simple-icons:modrinth"
-        buttonClass="hover:text-[#00af5c]"
+        class="hover:text-[#00af5c]"
       />
     </template>
 
