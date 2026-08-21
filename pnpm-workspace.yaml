@@ -15,7 +15,7 @@ catalogs:
     "vue": "3.5.41"
     "vue-router": "5.2.0"
     "nuxt": "4.5.2"
-    "nuxt-viewport": "2.6.0"
+    "nuxt-viewport": "2.6.1"
     "pinia": 4.0.3
     "@pinia/nuxt": "1.0.2"
 
@@ -25,5 +25,6 @@ catalogs:
     "@nuxt/ui": 4.10.0
     "@tailwindcss/vite": 4.3.3
     "tailwindcss": 4.3.3
-  misc:
-    "cookiejs": ^2.1.4
+
+minimumReleaseAgeExclude:
+  - nuxt-viewport@2.6.1
