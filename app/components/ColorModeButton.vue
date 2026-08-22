@@ -8,7 +8,7 @@ function getNextMode(): string {
     MODES[(MODES.indexOf(colorMode.value) + 1) % MODES.length] as string
   ).split("");
   nextMode[0] = nextMode[0]?.toLocaleUpperCase() as string;
-  return "Switch to " + nextMode.join("");
+  return "Switch to " + nextMode.join("") + " color scheme.";
 }
 </script>
 
