@@ -1,3 +1,5 @@
+<!-- markdownlint-disable MD032 MD034 MD029 MD026 -->
+
 # You made it! Here's some fun facts:
 
 1. I can make magnets go fast
