@@ -1,14 +1,14 @@
 <script setup lang="ts">
 const colorMode = useColorMode();
 
+const MODES: Array<string> = ["light", "dark"];
+
 function getNextMode(): string {
-  switch (colorMode.value) {
-    case "dark":
-      return "Switch to Light mode.";
-    case "light":
-      return "Switch to Dark mode.";
-  }
-  return "";
+  let nextMode: Array<string> = (
+    MODES[(MODES.indexOf(colorMode.value) + 1) % MODES.length] as string
+  ).split("");
+  nextMode[0] = nextMode[0]?.toLocaleUpperCase() as string;
+  return "Switch to " + nextMode.join("");
 }
 </script>
 
