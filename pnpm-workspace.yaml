@@ -22,7 +22,7 @@ catalogs:
   ui:
     "@nuxt/fonts": 0.14.0
     "@nuxt/icon": 2.5.0
-    "@nuxt/ui": 4.10.0
+    "@nuxt/ui": 4.11.0
     "@tailwindcss/vite": 4.3.3
     "tailwindcss": 4.3.3
 
