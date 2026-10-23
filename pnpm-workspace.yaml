@@ -13,7 +13,7 @@ catalogs:
     "@iconify-json/vscode-icons": latest
   vue:
     "vue": "3.5.41"
-    "vue-router": "5.2.0"
+    "vue-router": "5.3.1"
     "nuxt": "4.5.2"
     "nuxt-viewport": "2.6.1"
     "pinia": 4.0.3
